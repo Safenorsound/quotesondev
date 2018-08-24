@@ -7,6 +7,10 @@ html {
 	font-size: 1rem;
 }
 
+a {
+	text-decoration: none;
+}
+
 *,
 *:before,
 *:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
@@ -39,6 +43,8 @@ ul, ol {
 
 ul {
 	list-style: disc;
+
+	
 }
 
 ol {
