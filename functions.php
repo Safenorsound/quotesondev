@@ -69,9 +69,12 @@ function qod_scripts() {
 
 	wp_enqueue_script( 'qod-api', get_template_directory_uri() . '/build/js/api.min.js', array('jquery'), '20130115', true );
 
-	
-	  wp_localize_script( 'qod-api', 'qod_vars', array(
-      'rest_url' => esc_url_raw( rest_url() ),
+	  wp_localize_script( 'qod-api', 'api_vars', array(
+	  'rest_url' => esc_url_raw( rest_url() ),
+	  
+	  'home_url' => esc_url_raw( home_url() ),
+
+
 	  'wpapi_nonce' => wp_create_nonce( 'wp_rest' ),
 			'success'       => 'Your submissin has been recieved.',
 			'failure'			  => 'Oops, your submission was not recieved.'
