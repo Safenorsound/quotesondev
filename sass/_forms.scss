@@ -15,6 +15,7 @@ input[type="submit"] {
 	color: #0c0;
 	font-size:16px;
 	line-height: 1;
+	font-family: 'Exo';
 	padding: .75rem 2.25rem;
 
 	&:hover {
@@ -39,6 +40,7 @@ textarea {
 	color: #666;
 	border: 1px solid #ccc;
 	border-radius: 3px;
+	font-family: 'Exo';
 
 	&:focus {
 		color: #111;

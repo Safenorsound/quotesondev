@@ -6,6 +6,10 @@
 
 /* Submit a Quote Page */
 
+page-template-default {
+    background-color: #222;
+}
+
 
 .blog {
     background-color: #222;
@@ -15,6 +19,7 @@ p {
     color: #ffffff;
     line-height: 1.5;
     font-size: 16px;
+    font-family: 'Exo';
 }
 
 h2 {
@@ -39,6 +44,10 @@ text-decoration: none;
  }
 
 // Media Query
+
+@media (min-width: 620px) {
+    
+}
 
 // Desktop:
 
