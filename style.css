@@ -40,7 +40,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Submit a Quote Page
 --------------------------------------------------------------*/
 html {
-  font-family: sans-serif;
+  font-family: 'exo',sans-serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%; }
 
@@ -138,7 +138,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: monospace, monospace;
+  font-family: 'Exo',monospace, monospace;
   font-size: 1em; }
 
 button,
@@ -254,7 +254,7 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: "Exo", sans-serif;
   font-size: 1rem;
   line-height: 1.5; }
 
@@ -277,16 +277,16 @@ address {
 
 pre {
   background: #eee;
-  font-family: "Courier 10 Pitch", Courier, monospace;
+  font-family: "Exo", "Eco", "Courier 10 Pitch", Courier, monospace;
   font-size: .9375rem;
-  line-height: 1.6;
+  line-height: 1.5;
   margin-bottom: 1.6rem;
   max-width: 100%;
   overflow: auto;
   padding: 1.6rem; }
 
 code, kbd, tt, var {
-  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  font-family: "Exo", "Eco", Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
   font-size: .9375rem; }
 
 abbr, acronym {
@@ -605,8 +605,24 @@ object {
 --------------------------------------------------------------*/
 /* All Archives Page */
 /* Submit a Quote Page */
-page-template-default {
+body {
+  font-family: Exo Web,sans-serif; }
+
+.page-template-default {
   background-color: #222; }
+
+ul#primary-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+div.site-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: wrap;
+      -ms-flex: wrap;
+          flex: wrap; }
 
 .blog {
   background-color: #222; }
@@ -615,23 +631,27 @@ p {
   color: #ffffff;
   line-height: 1.5;
   font-size: 16px;
-  font-family: 'Exo'; }
+  font-family: 'Exo Web'; }
 
 h2 {
   color: #ffffff; }
 
+ul {
+  list-style-type: none; }
+
 a {
   color: #0c0;
+  text-transform: capitalize;
+  line-height: 1;
+  padding: 0 1rem;
+  list-style-type: none;
+  border-right: 1px solid #fff;
+  font-family: 'Exo Web', sans-serif;
   text-decoration: none; }
   a:hover {
     color: #090; }
   a primary-menu {
     color: #0c0; }
 
-.menu-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: row;
-      -ms-flex: row;
-          flex: row; }
+div.site-info {
+  margin: 4.5rem 0 3rem; }
