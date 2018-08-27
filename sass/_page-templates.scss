@@ -18,6 +18,11 @@ ul#primary-menu {
     display: flex;
 }
 
+li {
+    border-right: 1px solid #fff;
+
+}
+
 div.site-info {
     display: flex;
     flex: wrap;
@@ -40,7 +45,7 @@ h2 {
 }
 
 ul {
-    list-style-type: none
+    list-style-type: none;
 }
 
  a {
@@ -49,27 +54,25 @@ ul {
  line-height: 1;
  padding: 0 1rem;
  list-style-type: none;
- border-right: 1px solid #fff;
  font-family: 'Exo Web', sans-serif;
  &:hover {
     color: #090
 }
+ }
 
-primary-menu {
+.primary-menu {
     color: #0c0;
 }
-text-decoration: none;
-}
 
-div.site-info {
-margin: 4.5rem 0 3rem;
-}
+// div.site-info {
+// margin: 4.5rem 0 3rem;
+// }
 
 // Media Query
 
-@media (min-width: 620px) {
+// @media (min-width: 620px) {
 
-}
+// }
 
 // Desktop:
 

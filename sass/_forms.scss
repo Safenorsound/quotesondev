@@ -27,7 +27,16 @@ input[type="submit"] {
 	&:focus {
 		border-color: #090;
 	}
+
+	@media (min-width: 620px)
+ {
+    font-size: 1.25rem;
 }
+
+
+}
+
+
 
 /* Fields */
 
