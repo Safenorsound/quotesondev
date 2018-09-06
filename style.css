@@ -629,7 +629,7 @@ ul#primary-menu {
   display: -ms-flexbox;
   display: flex; }
 
-li {
+div.menu-menu-1-container li {
   border-right: 1px solid #fff; }
 
 .archive .entry-meta, .blog .entry-meta, .single .entry-meta {
