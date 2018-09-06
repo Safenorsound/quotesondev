@@ -18,8 +18,11 @@
     margin-bottom: 24px;
 }
 
-body {
+body, button, input, select, textarea {
+    color: #fff;
     font-family: Exo Web,sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
 }
 
 .page-template-default {

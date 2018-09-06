@@ -6,3 +6,16 @@ div.post-archives.clearfix {
     display: table;
     width: 100%;
 }
+
+.category-archives ul, .post-archives ul, .tag-archives ul {
+    margin-left: 0;
+    padding-left: 0;
+    margin: 0 0 1.5rem 3rem;
+}
+
+
+@media (min-width: 620px) {
+.category-archives ul li, .post-archives ul li, .tag-archives ul li {
+    font-size: 1.25rem;
+}
+}

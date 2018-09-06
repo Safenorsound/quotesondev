@@ -618,8 +618,11 @@ object {
   width: 100%;
   margin-bottom: 24px; }
 
-body {
-  font-family: Exo Web,sans-serif; }
+body, button, input, select, textarea {
+  color: #fff;
+  font-family: Exo Web,sans-serif;
+  font-size: 1rem;
+  line-height: 1.5; }
 
 .page-template-default {
   background-color: #222; }
