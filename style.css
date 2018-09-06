@@ -635,6 +635,11 @@ li {
 .archive .entry-meta, .blog .entry-meta, .single .entry-meta {
   margin-bottom: 3rem; }
 
+.archive .entry-title, .blog .entry-title, .single .entry-title {
+  display: inline;
+  font-size: 1.25rem;
+  font-weight: 400; }
+
 div.site-info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -654,8 +659,11 @@ p {
   padding-left: 1rem;
   margin-bottom: 1.5rem; }
 
-h2 {
+h2.entry-title {
   color: #ffffff; }
+
+p.footer {
+  font-size: 1rem; }
 
 ul {
   list-style-type: none; }
@@ -674,6 +682,15 @@ a {
   color: #0c0; }
 
 @media (min-width: 1080px) {
+  .site-content::after {
+    font-family: FontAwesome;
+    color: #0c0;
+    content: "\f10e";
+    line-height: 125px;
+    font-size: 100px;
+    right: 175px; } }
+
+@media (min-width: 1080px) {
   .site-content::before {
     font-family: FontAwesome;
     color: #0c0;
@@ -683,11 +700,6 @@ a {
     position: absolute;
     left: -175px; } }
 
-@media (min-width: 1080px) {
-  .site-content::after {
-    font-family: FontAwesome;
-    color: #0c0;
-    content: "\f10e";
-    line-height: 125px;
-    font-size: 100px;
-    right: 175px; } }
+@media (min-width: 620px) {
+  p {
+    font-size: 1.75rem; } }

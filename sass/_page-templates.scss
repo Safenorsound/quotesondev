@@ -39,9 +39,12 @@ li {
     margin-bottom: 3rem;
 }
 
-// div.menu-main-navigation-container {
-//     padding-left: 1rem;
-// }
+.archive .entry-title, .blog .entry-title, .single .entry-title {
+    display: inline;
+    font-size: 1.25rem;
+    font-weight: 400;
+    // margin-bottom: 0;
+}
 
 div.site-info {
     display: flex;
@@ -62,8 +65,12 @@ p {
     margin-bottom: 1.5rem;
 }
 
-h2 {
+h2.entry-title {
     color: #ffffff;
+}
+
+p.footer {
+    font-size: 1rem;
 }
 
 ul {
@@ -80,28 +87,22 @@ ul {
  &:hover {
     color: #090;
 }
- }
+}
 
 .primary-menu {
     color: #0c0;
 }
 
-// div.site-info {
-// margin: 4.5rem 0 3rem;
-// }
-
-// Media Query
-
-// @media (min-width: 620px) {
-
-// }
-
-// Desktop:
-
-// div#primary.content-area {
-
-
-// }
+.site-content::after {
+    @media (min-width: 1080px) {
+        font-family: FontAwesome;
+      color: #0c0;
+      content: "\f10e";
+      line-height: 125px;
+      font-size: 100px;
+      right: 175px;
+    }
+}
 
 .site-content::before {
     @media (min-width: 1080px) {
@@ -113,17 +114,11 @@ ul {
         position: absolute;
         left: -175px;
     } 
-
 }
 
-  .site-content::after {
-    @media (min-width: 1080px) {
-        font-family: FontAwesome;
-      color: #0c0;
-      content: "\f10e";
-      line-height: 125px;
-      font-size: 100px;
-      right: 175px;
-    }
+@media (min-width: 620px) {
+ p {
+    font-size: 1.75rem; 
+}
 
-  }
+}
