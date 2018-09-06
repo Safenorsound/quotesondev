@@ -6,6 +6,18 @@
 
 /* Submit a Quote Page */
 
+* {
+    outline: none;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1060px;
+    padding: 2.5%;
+    width: 100%;
+    margin-bottom: 24px;
+}
+
 body {
     font-family: Exo Web,sans-serif;
 }
@@ -23,11 +35,19 @@ li {
 
 }
 
+.archive .entry-meta, .blog .entry-meta, .single .entry-meta {
+    margin-bottom: 3rem;
+}
+
+// div.menu-main-navigation-container {
+//     padding-left: 1rem;
+// }
+
 div.site-info {
     display: flex;
     flex: wrap;
+    margin: 4.5rem 0 3rem;
 }
-
 
 .blog {
     background-color: #222;
@@ -35,9 +55,11 @@ div.site-info {
 
 p {
     color: #ffffff;
-    line-height: 1.5;
+    // line-height: 1;
     font-size: 16px;
     font-family: 'Exo Web';
+    padding-left: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 h2 {
@@ -56,7 +78,7 @@ ul {
  list-style-type: none;
  font-family: 'Exo Web', sans-serif;
  &:hover {
-    color: #090
+    color: #090;
 }
  }
 
@@ -76,24 +98,32 @@ ul {
 
 // Desktop:
 
-// .site-content::before {
-//     @include desktop-size {
-//         font-family: FontAwesome;
-//         content: "\f10d";
-//         color:$color_quotes;
-//         font-size: 100px;
+// div#primary.content-area {
 
-//     } 
 
-//   }
+// }
 
-//   .site-content::after {
-//     @include desktop-size {
-//       font-family: FontAwesome;
-//       content: "\f10e";
-//       color:$color_quotes;
-//       font-size: 100px;
+.site-content::before {
+    @media (min-width: 1080px) {
+        font-family: FontAwesome;
+        color: #0c0;
+        content: "\f10d";
+        line-height: 125px;
+        font-size: 100px;
+        position: absolute;
+        left: -175px;
+    } 
 
-    // } 
+}
 
-//   }
+  .site-content::after {
+    @media (min-width: 1080px) {
+        font-family: FontAwesome;
+      color: #0c0;
+      content: "\f10e";
+      line-height: 125px;
+      font-size: 100px;
+      right: 175px;
+    }
+
+  }

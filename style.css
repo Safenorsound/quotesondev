@@ -333,9 +333,6 @@ hr {
   height: 1px;
   margin-bottom: 1.5rem; }
 
-ul, ol {
-  margin: 0 0 1.5rem 3rem; }
-
 ul {
   list-style: disc; }
 
@@ -611,6 +608,16 @@ object {
 --------------------------------------------------------------*/
 /* All Archives Page */
 /* Submit a Quote Page */
+* {
+  outline: none; }
+
+.container {
+  margin: 0 auto;
+  max-width: 1060px;
+  padding: 2.5%;
+  width: 100%;
+  margin-bottom: 24px; }
+
 body {
   font-family: Exo Web,sans-serif; }
 
@@ -625,22 +632,27 @@ ul#primary-menu {
 li {
   border-right: 1px solid #fff; }
 
+.archive .entry-meta, .blog .entry-meta, .single .entry-meta {
+  margin-bottom: 3rem; }
+
 div.site-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: wrap;
       -ms-flex: wrap;
-          flex: wrap; }
+          flex: wrap;
+  margin: 4.5rem 0 3rem; }
 
 .blog {
   background-color: #222; }
 
 p {
   color: #ffffff;
-  line-height: 1.5;
   font-size: 16px;
-  font-family: 'Exo Web'; }
+  font-family: 'Exo Web';
+  padding-left: 1rem;
+  margin-bottom: 1.5rem; }
 
 h2 {
   color: #ffffff; }
@@ -660,3 +672,22 @@ a {
 
 .primary-menu {
   color: #0c0; }
+
+@media (min-width: 1080px) {
+  .site-content::before {
+    font-family: FontAwesome;
+    color: #0c0;
+    content: "\f10d";
+    line-height: 125px;
+    font-size: 100px;
+    position: absolute;
+    left: -175px; } }
+
+@media (min-width: 1080px) {
+  .site-content::after {
+    font-family: FontAwesome;
+    color: #0c0;
+    content: "\f10e";
+    line-height: 125px;
+    font-size: 100px;
+    right: 175px; } }
