@@ -43,8 +43,8 @@ hr {
 
 ul {
 	list-style: disc;
-
-	
+	display: flex;
+	flex-wrap: wrap;
 }
 
 ol {

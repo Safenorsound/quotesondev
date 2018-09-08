@@ -334,7 +334,12 @@ hr {
   margin-bottom: 1.5rem; }
 
 ul {
-  list-style: disc; }
+  list-style: disc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
 
 ol {
   list-style: decimal; }
@@ -620,7 +625,7 @@ object {
 
 body, button, input, select, textarea {
   color: #fff;
-  font-family: Exo Web,sans-serif;
+  font-family: 'Exo',sans-serif;
   font-size: 1rem;
   line-height: 1.5; }
 
@@ -647,9 +652,8 @@ div.site-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: wrap;
-      -ms-flex: wrap;
-          flex: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 4.5rem 0 3rem; }
 
 .blog {
@@ -658,7 +662,7 @@ div.site-info {
 p {
   color: #ffffff;
   font-size: 16px;
-  font-family: 'Exo Web';
+  font-family: 'Exo';
   padding-left: 1rem;
   margin-bottom: 1.5rem; }
 
@@ -705,4 +709,6 @@ a {
 
 @media (min-width: 620px) {
   p {
-    font-size: 1.75rem; } }
+    font-size: 1.75rem; }
+  .category-archives ul li, .post-archives ul li, .tag-archives ul li {
+    font-size: 1.25rem; } }

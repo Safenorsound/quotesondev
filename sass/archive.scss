@@ -13,6 +13,22 @@ div.post-archives.clearfix {
     margin: 0 0 1.5rem 3rem;
 }
 
+.category-archives ul li, .post-archives ul li, .tag-archives ul li {
+    float: left;
+    font-size: 1rem;
+    margin-bottom: .5rem;
+    margin-right: 1.125rem;
+   
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+
 
 @media (min-width: 620px) {
 .category-archives ul li, .post-archives ul li, .tag-archives ul li {
