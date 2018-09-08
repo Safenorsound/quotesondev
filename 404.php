@@ -18,7 +18,7 @@
 				</header><!-- .page-header -->
  
 				<div class="page-content">
-					<p><?php echo esc_html( 'It looks like nothing was found at this location. Maybe try a search?' ); ?></p>
+					<p class="no-margin-left"><?php echo esc_html( 'It looks like nothing was found at this location. Maybe try a search?' ); ?></p>
 
 					<?php get_search_form(); ?>
 				</div><!-- .page-content -->

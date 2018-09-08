@@ -25,7 +25,7 @@ body, button, input, select, textarea {
     line-height: 1.5;
 }
 
-.page-template-default {
+.page-template-default, body.error404 {
     background-color: #222;
 }
 
@@ -68,6 +68,11 @@ p {
     margin-bottom: 1.5rem;
 }
 
+h1 {
+    font-size: 2em;
+    margin: .67em 0;
+}
+
 h2.entry-title {
     color: #ffffff;
 }
@@ -96,15 +101,8 @@ ul {
     color: #0c0;
 }
 
-.site-content::after {
-    @media (min-width: 1080px) {
-        font-family: FontAwesome;
-      color: #0c0;
-      content: "\f10e";
-      line-height: 125px;
-      font-size: 100px;
-      right: 175px;
-    }
+.category-archives ul li, .post-archives ul li, .tag-archives ul li {
+    font-size: 1.25rem;
 }
 
 .site-content::before {
@@ -113,18 +111,145 @@ ul {
         color: #0c0;
         content: "\f10d";
         line-height: 125px;
-        font-size: 100px;
+        font-size: 125px;
         position: absolute;
         left: -175px;
     } 
 }
 
+@media (min-width: 1080px) {
+.site-content:after, .site-content:before {
+    color: #0c0;
+    font-family: FontAwesome;
+    font-size: 125px;
+    line-height: 125px;
+    position: absolute;
+    top: 0;
+}
+
+.site-info {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+}
+
+.site-content:before {
+    content: "\f10d";
+    left: -175px;
+}
+
+.site-content:after {
+    content: "\f10e";
+    right: -175px;
+}
+
 @media (min-width: 620px) {
  p {
     font-size: 1.75rem; 
+    margin-left: 0;
 }
 
-.category-archives ul li, .post-archives ul li, .tag-archives ul li {
+.tag-cloud-link {
+    font-size: 1.25rem!important;
+}
+
+.category-archives ul li, .post-archives ul li, .tag-archives ul li, .tag-cloud-link {
+    font-size: 1.25rem;
+}
+
+.logo img {
+    // width: 500px;
+    margin: 0 auto;
+}
+
+input[type=email], input[type=password], input[type=search], input[type=text], input[type=url], textarea {
     font-size: 1.25rem;
 }
 }
+
+@media (min-width: 1080px) {
+.archive .entry-content p, .blog .entry-content p, .single .entry-content p {
+    font-size: 2.5rem;
+}
+
+.logo {
+    margin: 0 auto;
+    text-align: center;
+    width: 700px;
+}
+
+.site-content {
+    margin: 4.5rem 175px 1.5rem;
+    position: relative;
+}
+}
+
+// 404 page
+
+p.no-margin-left, p.font-size-p {
+    padding: 0;
+    font-size: 1rem;
+}
+
+body.error, button, input, select, textarea {
+    color: #fff;
+    font-family: Exo Web,sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.search-form input[type=search] {
+    width: 240px;
+}
+
+fieldset {
+    border: 1px solid silver;
+    margin: 0 2px;
+    padding: .35em .625em .75em;
+}
+
+button, input[type=button], input[type=reset], input[type=submit] {
+    background-color: #222;
+    border: 2px solid #0c0;
+    border-radius: 3px;
+    color: #0c0;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1;
+    padding: .75rem 2.25rem;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.search-submit {
+    border: 0;
+    float: left;
+    padding-left: .75rem;
+    padding-right: .75rem;
+}
+
+.search-form label {
+    float: left;
+    min-width: 200px;
+}
+
+label {
+    display: block;
+    margin-bottom: .75rem;
+}
+
+input[type=email], input[type=password], input[type=search], input[type=text], input[type=url], textarea {
+    background-color: #222;
+    border: 2px solid #0c0;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    padding: .25rem .5rem;
+}
+
