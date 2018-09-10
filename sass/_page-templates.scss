@@ -26,7 +26,7 @@ body, button, input, select, textarea {
 }
 
 .page-template-default, body.error404 {
-    background-color: #222;
+    background-color: #222222;
 }
 
 ul#primary-menu {
@@ -56,7 +56,7 @@ div.site-info {
 }
 
 .blog {
-    background-color: #222;
+    background-color: #222222;
 }
 
 p {
@@ -91,7 +91,7 @@ ul {
  line-height: 1;
  padding: 0 1rem;
  list-style-type: none;
- font-family: 'Exo Web', sans-serif;
+ font-family: 'Exo', sans-serif;
  &:hover {
     color: #090;
 }
@@ -194,7 +194,7 @@ p.no-margin-left, p.font-size-p {
 
 body.error, button, input, select, textarea {
     color: #fff;
-    font-family: Exo Web,sans-serif;
+    font-family: 'Exo',sans-serif;
     font-size: 1rem;
     line-height: 1.5;
 }
@@ -210,7 +210,7 @@ fieldset {
 }
 
 button, input[type=button], input[type=reset], input[type=submit] {
-    background-color: #222;
+    background-color: #222222;
     border: 2px solid #0c0;
     border-radius: 3px;
     color: #0c0;
@@ -244,7 +244,7 @@ label {
 }
 
 input[type=email], input[type=password], input[type=search], input[type=text], input[type=url], textarea {
-    background-color: #222;
+    background-color: #222222;
     border: 2px solid #0c0;
     border-radius: 3px;
     color: #fff;
@@ -252,4 +252,3 @@ input[type=email], input[type=password], input[type=search], input[type=text], i
     margin-bottom: 1.5rem;
     padding: .25rem .5rem;
 }
-

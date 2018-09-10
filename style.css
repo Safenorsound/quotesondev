@@ -223,26 +223,26 @@ th {
 --------------------------------------------------------------*/
 @font-face {
   font-family: 'Exo';
-  src: url("Exo-Light.woff2") format("woff2"), url("Exo-Light.woff") format("woff");
+  src: url("../../fonts/Exo-Light.woff2") format("woff2"), url("../../fonts/Exo-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal; }
 
 @font-face {
   font-family: 'Exo';
-  src: url("Exo-MediumItalic.woff2") format("woff2"), url("Exo-MediumItalic.woff") format("woff");
-  font-weight: 500;
+  src: url("../../fonts/Exo-LightItalic.woff2") format("woff2"), url("../../fonts/Exo-LightItalic.woff") format("woff");
+  font-weight: 300;
   font-style: italic; }
 
 @font-face {
   font-family: 'Exo';
-  src: url("Exo-Medium.woff2") format("woff2"), url("Exo-Medium.woff") format("woff");
+  src: url("../../fonts/Exo-Medium.woff2") format("woff2"), url("../../fonts/Exo-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal; }
 
 @font-face {
   font-family: 'Exo';
-  src: url("Exo-LightItalic.woff2") format("woff2"), url("Exo-LightItalic.woff") format("woff");
-  font-weight: 300;
+  src: url("../../fonts/Exo-MediumItalic.woff2") format("woff2"), url("../../fonts/Exo-MediumItalic.woff") format("woff");
+  font-weight: 500;
   font-style: italic; }
 
 /*--------------------------------------------------------------
@@ -631,7 +631,7 @@ body, button, input, select, textarea {
   line-height: 1.5; }
 
 .page-template-default, body.error404 {
-  background-color: #222; }
+  background-color: #222222; }
 
 ul#primary-menu {
   display: -webkit-box;
@@ -658,7 +658,7 @@ div.site-info {
   margin: 4.5rem 0 3rem; }
 
 .blog {
-  background-color: #222; }
+  background-color: #222222; }
 
 p {
   color: #ffffff;
@@ -686,7 +686,7 @@ a {
   line-height: 1;
   padding: 0 1rem;
   list-style-type: none;
-  font-family: 'Exo Web', sans-serif; }
+  font-family: 'Exo', sans-serif; }
   a:hover {
     color: #090; }
 
@@ -757,7 +757,7 @@ p.no-margin-left, p.font-size-p {
 
 body.error, button, input, select, textarea {
   color: #fff;
-  font-family: Exo Web,sans-serif;
+  font-family: 'Exo',sans-serif;
   font-size: 1rem;
   line-height: 1.5; }
 
@@ -770,7 +770,7 @@ fieldset {
   padding: .35em .625em .75em; }
 
 button, input[type=button], input[type=reset], input[type=submit] {
-  background-color: #222;
+  background-color: #222222;
   border: 2px solid #0c0;
   border-radius: 3px;
   color: #0c0;
@@ -799,7 +799,7 @@ label {
   margin-bottom: .75rem; }
 
 input[type=email], input[type=password], input[type=search], input[type=text], input[type=url], textarea {
-  background-color: #222;
+  background-color: #222222;
   border: 2px solid #0c0;
   border-radius: 3px;
   color: #fff;
