@@ -36,9 +36,6 @@ This was my fifth project in the Red Academy's Web Development program. I combin
 <li> The role of Metadata in its various forms: descriptive, administrative, structual. 
 <li> The role of WP taxonomies as a classification tool. 
 <li> The IA toolbox: content-audits, card sorting, cluster analysis, tree testing, 
-<li>
-<li>
-<li>
 </ul>
 
 
