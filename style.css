@@ -411,7 +411,7 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea {
-  color: #666;
+  color: #0c0;
   border: 1px solid #ccc;
   border-radius: 3px;
   font-family: 'Exo'; }
@@ -421,7 +421,7 @@ textarea {
   input[type="password"]:focus,
   input[type="search"]:focus,
   textarea:focus {
-    color: #111; }
+    color: #0c0; }
 
 input[type="text"],
 input[type="email"],
