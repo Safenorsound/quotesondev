@@ -9,6 +9,8 @@
 
   // Ajax call changed from 'post' to 'get'
 
+  var lastPage = '';
+
   $('#new-quote-button').on('click', function(event) {
     event.preventDefault();
 
@@ -36,21 +38,37 @@
 
       // Creat an "if" statement if there is no person or website. Can use quote.source.length: true or false.
 
+      if (quote._qod_quote_source_url.length) {
+        $('.entry-meta span').html(
+          '<a href="' +
+            quote.qod_quote_source_url +
+            '">' +
+            quote.qod_quote_source +
+            '</a>'
+        );
+      } else {
+        $('.entry-meta span').text(quote._api_quote_source);
+      }
+
       // Popstate: when the active history changes.
       // This is so the client can go back to a previous state.
-      window.addEventListener('popstate', function(event) {
-        window.location.replace(url);
-        url = home_url;
+      window.addEventListener('popstate', function() {
+        // url = home_url;
+        window.location.replace(lastPage);
+
+        $(window).on('popstate', function() {
+          window.location.replace(lastPage);
+        });
+
+        lastPage = document.URL;
+        history.pushState(null, null, api_vars.home_url + '/' + data[0].slug);
 
         // To modify the history slug in the URL: https://developer.mozilla.org/en-US/docs/Web/API/History_API
-        history.pushState(null, null, api_vars.home_url + '/' + quote.slug);
       });
     });
   });
 
   // quote-submission-form
-
-  // Once the ID of the quote submission form, listen for the event for the quote-submission form.
 
   $('#quote-submission-form').on('submit', function(event) {
     event.preventDefault();
@@ -69,7 +87,7 @@
         xhr.setRequestHeader('X-WP-Nonce', api_vars.wpapi_nonce);
       }
     })
-      .done(function(response) {
+      .done(function() {
         $('.quote-submission').slideUp();
         $('.entry-title').html('Congratulations, you have submitted a quote!');
       })
