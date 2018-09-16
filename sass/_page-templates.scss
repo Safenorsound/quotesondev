@@ -252,3 +252,32 @@ input[type=email], input[type=password], input[type=search], input[type=text], i
     margin-bottom: 1.5rem;
     padding: .25rem .5rem;
 }
+
+// Search Page
+
+.search-form input[type=search] {
+    width: 240px;
+}
+.search-form label {
+    float: left;
+    min-width: 200px;
+}
+
+.archive .page-title, .search .page-title {
+    border-bottom: 1px dotted #fff;
+    margin-top: 3rem;
+    padding-bottom: 1.5rem;
+}
+body {
+    background: #222;
+}
+
+entry.summary {
+    p {
+        margin-bottom: 1.5rem;
+    }
+}
+
+
+
+
