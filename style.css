@@ -630,6 +630,9 @@ body, button, input, select, textarea {
   font-size: 1rem;
   line-height: 1.5; }
 
+.site-content:after, .site-content:before {
+  display: none; }
+
 .page-template-default, body.error404 {
   background-color: #222222; }
 
@@ -704,7 +707,8 @@ a {
     line-height: 125px;
     font-size: 125px;
     position: absolute;
-    left: -175px; } }
+    left: -175px;
+    display: block; } }
 
 @media (min-width: 1080px) {
   .site-content:after, .site-content:before {
@@ -713,7 +717,8 @@ a {
     font-size: 125px;
     line-height: 125px;
     position: absolute;
-    top: 0; }
+    top: 0;
+    display: block; }
   .site-info {
     -webkit-box-pack: end;
     -ms-flex-pack: end;

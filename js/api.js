@@ -27,6 +27,8 @@
     }).done(function(response) {
       var quote = response.shift();
 
+      console.log(quote);
+
       // Quote
       $('.entry-content').html(quote.content.rendered);
 
@@ -34,7 +36,7 @@
       $('.entry-title').html(quote.title.rendered);
 
       // Website
-      $('.source').html(quote.source.rendered);
+      $('.source').html(quote.source.rendered); // TODO fix this .source reference, check console.log and quote for help
 
       // Creat an "if" statement if there is no person or website. Can use quote.source.length: true or false.
 
@@ -52,20 +54,20 @@
 
       // Popstate: when the active history changes.
       // This is so the client can go back to a previous state.
-      window.addEventListener('popstate', function() {
-        // url = home_url;
+      // window.addEventListener('popstate', function() {
+      //   // url = home_url;
+      //   window.location.replace(lastPage);
+
+      $(window).on('popstate', function() {
         window.location.replace(lastPage);
-
-        $(window).on('popstate', function() {
-          window.location.replace(lastPage);
-        });
-
-        lastPage = document.URL;
-        history.pushState(null, null, api_vars.home_url + '/' + data[0].slug);
-
-        // To modify the history slug in the URL: https://developer.mozilla.org/en-US/docs/Web/API/History_API
       });
-    });
+
+      lastPage = document.URL;
+      history.pushState(null, null, api_vars.home_url + '/' + quote.slug);
+
+      // To modify the history slug in the URL: https://developer.mozilla.org/en-US/docs/Web/API/History_API
+      // });
+    }); // end of done method, add a .fail method
   });
 
   // quote-submission-form
@@ -89,7 +91,7 @@
     })
       .done(function() {
         $('.quote-submission').slideUp();
-        $('.entry-title').html('Congratulations, you have submitted a quote!');
+        $('.site-content').html('Congratulations, you have submitted a quote!');
       })
       .fail(function() {
         alert('Sorry, post could not be sent. Please try again');

@@ -25,6 +25,10 @@ body, button, input, select, textarea {
     line-height: 1.5;
 }
 
+.site-content:after, .site-content:before {
+    display: none;
+}
+
 .page-template-default, body.error404 {
     background-color: #222222;
 }
@@ -35,7 +39,6 @@ ul#primary-menu {
 
 div.menu-menu-1-container li {
     border-right: 1px solid #fff;
-
 }
 
 .archive .entry-meta, .blog .entry-meta, .single .entry-meta {
@@ -85,6 +88,7 @@ ul {
     list-style-type: none;
 }
 
+
  a {
  color: #0c0;
  text-transform: capitalize;
@@ -114,6 +118,7 @@ ul {
         font-size: 125px;
         position: absolute;
         left: -175px;
+        display: block;
     } 
 }
 
@@ -125,6 +130,7 @@ ul {
     line-height: 125px;
     position: absolute;
     top: 0;
+    display: block;
 }
 
 .site-info {
