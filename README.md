@@ -16,3 +16,5 @@ This was my fifth project in the Red Academy's Web Development program. I combin
 https://github.com/Safenorsound/quotesondev/edit/master/
 
 ![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+
+/Applications/MAMP/htdocs/QOD/wp-admin/images/QOD Screenshot.jpg
